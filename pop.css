@@ -1,0 +1,168 @@
+*{
+    text-transform: capitalize;
+}
+body{
+    padding: 0;
+    margin: 0;
+}
+header{
+    position:fixed;
+    left: 0;top: 0;
+    z-index: 1000;
+    height: 5rem;
+    background-color: white;
+    width: 100%;
+    
+}
+header ul{
+    list-style: none;
+   
+}
+header ul li{
+    float: right;
+    margin: 0 1%;
+    background-color: white;
+    border-radius: 3px;
+    margin-top: -1.1rem;
+    text-decoration: none;
+    color: black;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.popular{
+    border-bottom: orange 3px solid;
+    transform: scale(1.2px);
+    color: orangered;
+}
+.left{
+  width: 10%;
+  height: 100%;
+}
+.center{
+    width: 80%;
+    height: 100%;
+    display: flex;
+   flex-wrap: wrap;
+  }
+.right{
+    width: 10%;
+    height: 100%;
+}
+.total img{
+    width: 10rem;
+    height: 10rem;
+    padding: 0.5%;
+    border: solid #444 0.1px;
+    border-radius: 2px;
+}
+.body{
+    margin-top:0;
+}
+.after{
+    display:flex; 
+   
+}
+.center .total{
+    position: relative;
+    text-align: center;
+    width: 12rem;
+    height: 15rem;
+    border: #444 solid 0.5px;
+    border-radius: 6px;
+    background-color: white;
+    margin: 0.5%;
+    padding-top: 1%;
+   
+}
+.price{
+    position: absolute;
+    left: 0rem;
+    top: 1.5rem;
+    width: 5rem;
+    height: 1.5rem;
+    background-color: orangered;
+    transform: rotate(-30deg);
+    border-radius: 4px;
+    overflow: hidden;
+}
+.head{
+    margin-left: 25%;
+    font-size: 200%;
+    font-weight: bold;
+    padding-top: 2.5rem;
+}
+.body{
+    background-color: rgb(192, 190, 188);
+}
+.order{
+    margin-top: 4px;
+}
+.order a{
+    display: inline-block;
+    width: 5rem; 
+    border: solid red 0.5px;
+    border-radius: 4px;
+    color: red;
+    text-decoration: none;
+    padding: 3px 10px;
+    position: relative;
+    z-index: 0;
+}
+.order a::before{
+    content: '';
+    top: 0;right: 0; 
+    position: absolute;
+    width: 0%;
+    height: 100%;
+    background-color: rgb(216, 13, 13);
+    transition: .3s linear;
+    z-index: -1;
+    
+}
+.order a:hover::before{
+    width: 100%;
+    left: 0;
+}
+.order a:hover{
+   color: white;
+}
+section{
+    margin-top: 2px;
+}
+.no {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 20%;
+    margin-top: 4rem;
+    color: white;
+    border-bottom: white solid 0.1px;
+    padding-bottom: 0.5rem;
+}
+.no img{
+    width: 4rem;
+    height: 4rem;
+    position: relative;
+}
+.no .pric{
+    margin-top: 2rem;
+    margin-left: 5rem;
+}
+.menu{
+    background-color: rgb(8, 3, 34);
+    border-radius: 12px;
+}
+.menu .head{
+    color: white;
+}
+
+.no .order a{
+   font-size: 0.4rem;
+   width: 3rem;
+}
+.orders{
+    padding-top: 2.5rem;
+    margin:10rem;
+    background-color: blue;
+}
